@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4CAF50;
+    --primary-color: #ffffff;
     --secondary-color: #333;
     --light-color: #f4f4f4;
-    --text-color: #555;
+    --text-color: #ffffff;
     --white-color: #fff;
 }
 
@@ -158,4 +158,172 @@ a.card:hover {
     width: 100%;
     height: 315px;
     border-radius: 10px; 
+}
+body {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: var(--text-color);
+    position: relative;
+    background: none; 
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('CodingBlur.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    filter: blur(5px); 
+    z-index: -1;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+    gap: 5rem; 
+    justify-items: center; 
+}
+
+.card {
+    background: var(--white-color);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    background: #f0f0f0;
+    transform: scale(1.08); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+header {
+    background: linear-gradient(90deg, #004aad, #007bb5, #00333b); 
+    color: var(--white-color);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.55); 
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 650px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333; 
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000000; 
+}
+
+.card p {
+    font-size: 1.1rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    color: #000000; 
+}
+
+.card:hover {
+    background-color: rgba(240, 240, 240, 1); 
+    transform: scale(1.08);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+#personal-project h2 {
+    color: #ff5733; 
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#personal-project {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+#personal-project .video-card {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+}
+
+#personal-project h2 {
+    color: #ff5733;
+}
+#personal-project {
+    background-color: rgba(0, 0, 0, 0.55); 
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+#personal-project h2 {
+    color: #ff5733; 
+}
+
+#personal-project .video-card {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+}
+#personal-project {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 2rem 1rem;
+    margin-top: 6rem; 
+}
+header {
+    background: linear-gradient(90deg, #004aad, #007bb5, #00333b);
+    color: var(--white-color);
+    padding: 22rem 0; 
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem; 
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    padding: 1.5rem;
+    background: var(--secondary-color);
+}
+
+nav a {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
 }
